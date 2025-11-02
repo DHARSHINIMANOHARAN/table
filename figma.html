@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MiCasa - Real Estate</title>
   <link rel="stylesheet" href="./asset/css/figma.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
 </head>
 <body>
 
@@ -20,8 +23,9 @@
           <li><a href="#">Contact Us</a></li>
         </ul>
       </nav>
-      <div class="profile">
-        <img src="https://via.placeholder.com/35" alt="profile">
+      <div class="profile" style="background-color: orangered;height: 48px;width: 46px;border-radius: 26px;">
+        <i class="fa-solid fa-user" style="color: white;font-size: 22px;margin-left: 9px;margin-top: 11px;"></i>
+        <!-- <img src="https://via.placeholder.com/35" alt="profile"> -->
       </div>
     </div>
   </header>
@@ -30,7 +34,7 @@
   <section class="hero">
     <div class="hero-content">
       <h1>Buy, Sell, Rent.</h1>
-      <p style="font-size:17px;">The best deals, for both Realtors and Customers.</p>
+      <h3 style="font-size:30px;font-weight: bolder;">The best deals, for both <br> Realtors and Customers.</h3>
       <a href="#" class="explore-link">Explore More →</a>
     </div>
   </section>
@@ -56,7 +60,7 @@
           <option>$300,000+</option>
         </select>
         <button class="btn">Search MiCasa →</button>
-      </div>
+      </div>style="text-align: left;"
     </div>
   </section>
 
@@ -64,29 +68,45 @@
   <section class="how-it-works">
     <h2>How It Works</h2>
     <div class="steps">
-      <div class="step">
-        <img src="https://via.placeholder.com/50" alt="">
-        <h4>Find A Listing</h4>
-        <p>Make a choice of the type of apartment and qualities that appeal to your interest.</p>
+      <div class="step" style="text-align: left;display: flex;justify-content: space-evenly;">
+
+        <div style="background-color: #0a2342; height:60px;width: 60px; border-radius: 20px; margin-right: -60px;">
+          <i class="fa-regular fa-house" style="color: white;font-size: 40px; margin-top: 10px;margin-left: 5px;"></i>
+        </div>
+            <div>
+              <!-- <img src="https://via.placeholder.com/50" alt="" > -->
+              <h4>Find A Listing</h4>
+              <p >Make a choice of the type of apartment <br>and qualities that appeal to your <br> interest.</p>
+            </div>
+        </div>
+      
+      <div class="step" style="text-align: left;display: flex;justify-content: space-evenly;">
+              <div style="background-color: #0a2342; height:60px;width: 60px; border-radius: 20px;margin-right: -60px;">
+                <i class="fa-regular fa-house" style="color: white;font-size: 40px; margin-top: 10px; margin-left: 5px;"></i>
+              </div>
+                <div>
+                <h4>Talk to an Agent</h4>
+                <p>Our Agents are available 24 Hours <br> Mon-Sat.</p>
+              </div>
       </div>
-      <div class="step">
-        <img src="https://via.placeholder.com/50" alt="">
-        <h4>Talk to an Agent</h4>
-        <p>Our Agents are available 24 Hours Mon-Sat.</p>
-      </div>
-      <div class="step">
-        <img src="https://via.placeholder.com/50" alt="">
-        <h4>Set the date and Move in!</h4>
-        <p>Make payments, get receipts and all other important documents, set your move-in date.</p>
-      </div>
+
+      <div class="step" style="text-align: left;display: flex;justify-content: space-evenly;">
+           <div style="background-color: #0a2342; height:60px;width: 60px; border-radius: 20px;margin-right: -60px;">
+                <i class="fa-regular fa-house" style="color: white;font-size: 40px; margin-top: 10px;margin-left: 5px;"></i>
+              </div>
+                <div>
+                    <h4>Set the date and Move in!</h4>
+                    <p>Make payments, get receipts and all <br>other important documents, set your <br> move-in date.</p>
+                </div>
+       </div>
     </div>
   </section>
 
   <!--  -->
 
-  <section class="featured">
+  <section class="container mt-5">
     <div class="featured-header">
-      <h2>Featured <span>Houses</span></h2>
+      <h2 style="color: #0a2342;">Featured <span>Houses</span></h2>
       <div class="filters">
         <button class="active">🏠 House</button>
         <button>🏡 Villa</button>
@@ -120,7 +140,7 @@
       <!-- House 2 -->
       <div class="house-card popular">
         <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1600585154206-0c2f1e23e3d8" alt="House 2" />
+          <img src="https://picsum.photos/seed/picsum/200/300" alt="House 2" />
           <span class="tag popular-tag">🔥 Popular</span>
         </div>
         <div class="house-info">
@@ -142,7 +162,7 @@
       <!-- House 3 -->
       <div class="house-card">
         <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1600585154575-46e573870d4f" alt="House 3" />
+          <img src="https://picsum.photos/200/300?grayscale" alt="House 3" />
           <span class="tag">🏷️ New House</span>
         </div>
         <div class="house-info">
@@ -164,7 +184,7 @@
       <!-- House 4 -->
       <div class="house-card">
         <div class="image-container">
-          <img src="https://images.unsplash.com/photo-1572120360610-d971b9b78825" alt="House 4" />
+          <img src="https://picsum.photos/id/237/200/300" alt="House 4" />
           <span class="tag">🏷️ New House</span>
         </div>
         <div class="house-info">
@@ -186,7 +206,7 @@
   </section>
 
   <!-- POPULAR CITIES SECTION -->
-  <section class="popular-cities">
+  <section class="popular-cities mt-5">
     <div class="cities-header">
       <h2>POPULAR CITIES</h2>
       <a href="#">Explore More →</a>
@@ -194,7 +214,7 @@
 
     <div class="cities-grid">
       <div class="city-card">
-        <img src="https://images.unsplash.com/photo-1593619468856-9f65d7d9e92b" alt="Lagos">
+        <img src="https://picsum.photos/seed/picsum/200/300" height="600px" alt="Lagos">
         <div class="overlay">
           <h3>Lagos</h3>
         </div>
@@ -208,7 +228,7 @@
       </div>
 
       <div class="city-card">
-        <img src="https://images.unsplash.com/photo-1565631588-d1a3c80a42e2" alt="London">
+        <img src="https://picsum.photos/seed/picsum/200/300" alt="London">
         <div class="overlay">
           <h3>London</h3>
         </div>
@@ -224,18 +244,18 @@
   </section>
 
   <!-- BECOME A HOST SECTION -->
-  <section class="become-host">
+  <section class="become-host" style="background-image: url('/asset/img/cta-bg.png')">
     <div class="host-content">
-      <h2>Become a Host</h2>
+      <h1>Become a Host</h1>
       <p>Join thousands of Landlords and earn an extra income.</p>
       <button>Learn More</button>
     </div>
     <div class="host-image">
-      <img src="https://images.unsplash.com/photo-1600585152908-86f4f7f5d7f8" alt="Host Image">
+      <!-- <img src="https://images.unsplash.com/photo-1600585152908-86f4f7f5d7f8" alt="Host Image"> -->
     </div>
   </section>
   <!-- CLIENT TESTIMONIALS SECTION -->
-  <section class="testimonials">
+  <section class="testimonials" style="margin-top: 7%;">
     <h2>What Our Clients are Saying</h2>
     
     <div class="testimonial-grid">
@@ -280,16 +300,16 @@
   </section>
 
   <!-- MOBILE APP SECTION -->
-  <section class="mobile-app">
+  <section class="mobile-app" style="margin-top: 5%;">
     <div class="mobile-grid">
       <div class="mobile-image">
-        <img src="https://i.imgur.com/qGm2FZJ.png" alt="Mobile Mockup">
+        <img src="./asset/img/mobile1.png" alt="Mobile Mockup">
       </div>
 
       <div class="mobile-content">
-        <h2>Manage your projects from your Mobile.</h2>
+        <h1 style="font-size: 28px;font-weight: bolder;">Manage your projects from your Mobile.</h1>
         <p>
-          Download the app to manage your projects, keep track of your bookings and 
+          Download the app to manage your projects, keep track <br>of your bookings and 
           stay on track with the progress.
         </p>
         <h4>Get the App</h4>
@@ -300,6 +320,94 @@
       </div>
     </div>
   </section>
+
+  <!-- Partners Section -->
+  <section class="partners-section">
+    <div class="container">
+      <div class="partners-content">
+        <div class="text">
+          <h2>Our Partners</h2>
+          <p>With our over 100,000 partners worldwide, we Provide a wide range of services.</p>
+        </div>
+        <div class="circle-graphic">
+          <div class="outer-circle">
+            <div class="inner-circle">
+              <img src="./asset/img/partner.PNG" alt="Slack" class="icon center">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <h3>40+</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat">
+          <h3>540+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat">
+          <h3>300</h3>
+          <p>Dedicated Members</p>
+        </div>
+        <div class="stat">
+          <h3>25+</h3>
+          <p>Awards Won</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <h2><span class="orange">Mi</span>Casa</h2>
+        <p>Copyrights MiCasa Homes and Properties<br>All rights reserved.</p>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-dribbble"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Testimonials</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Support</h4>
+          <ul>
+            <li><a href="#">Help center</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Legal</a></li>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Status</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Stay up to date</h4>
+          <div class="subscribe-box">
+            <input type="email" placeholder="Your email address">
+            <button><i class="fa-solid fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 
 </body>
 </html>
